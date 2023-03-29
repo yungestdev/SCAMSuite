@@ -46,7 +46,7 @@ def main():
     time.sleep(1.5)
 
     try:
-        r = requests.get("https://raw.githubusercontent.com/yungestdev/SCAMSuiteMeta/main/version.md")
+        r = requests.get("https://raw.githubusercontent.com/yungestdev/ScamSuiteMeta/main/version.md")
 
         if r.status_code == 200:
             print(f"{colors.GREEN}[+] Server is up")
