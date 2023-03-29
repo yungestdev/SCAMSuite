@@ -1,4 +1,4 @@
-from installer import checkpcap, os, time
+from dependencies import checkpcap, os, time
 from pyfiglet import figlet_format
 from mods.colors import SourceColorList
 import requests, subprocess
@@ -14,7 +14,7 @@ def check_process_running(process_name):
             if process.name().lower() == process_name.lower():
                 process.kill()
                 
-        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+        except:
             pass
 
 
